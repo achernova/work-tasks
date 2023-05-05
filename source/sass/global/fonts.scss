@@ -9,10 +9,23 @@
 // }
 
 @font-face {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src:
+    local("PlayfairDisplay-Regular"),
+    url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("PlayfairDisplay-Bold"),
+    url("../fonts/Poppins-Bold.woff2") format("woff2"),
+    url("../fonts/Poppins-Bold.woff") format("woff");
 }

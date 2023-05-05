@@ -1,10 +1,15 @@
-mixin intro()
-  .intro
-    //- вставлять блоки во внешний контейнер неверно
-    //- все блоки содержат в себе container без доп класса tutorial__wrapper
-    .container
-      p(style="margin-top: 40px;") Текст&nbsp;с&nbsp;мнемониками
+mixin intro(options={})
+  - const list = options.list || false;
+  - const text = options.text || "";
+  - const href = options.href || "";
 
-      p(style="margin-top: 40px;") Пример использования +img()
-      p(style="margin-bottom: 40px;")
-        +img("content", "placeholder", "png", 120, 120, "Пример")
+  .intro&attributes(attributes)
+    .container
+      .intro__heading
+        h1.intro__title Задачки на прокачку
+        p Задачи на интерфейсную логику, которые часто встречаются на реальных проектах
+      ul.intro__list
+        each item in list
+          li.intro__item
+            a.intro__link(href=item.href)!=item.text
+

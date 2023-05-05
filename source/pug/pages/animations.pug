@@ -1,7 +1,7 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "ProjectName" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "Анимации" //- на страницах кроме главной используйте О нас — ProjectName
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
@@ -11,8 +11,27 @@ block variables
 
 block main
   main
-    //- на странице запрещен "голый" код
-    //- все блоки вставляются из папки pug/components/blocks
-    +intro()
+    +intro({
+      list: [
+        {
+          text: 'Меню',
+        },
+        {
+          text: 'Лоадер',
+        },
+        {
+          text: 'Сборка первого экрана',
+        },
+        {
+          text: 'Появления блоков',
+        },
+        {
+          text: 'Параллакс',
+        },
+        {
+          text: 'Слайдер по скроллу',
+        },
+      ]
+    })
 
 block modals

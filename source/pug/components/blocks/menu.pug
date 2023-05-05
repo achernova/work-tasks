@@ -1,0 +1,10 @@
+mixin menu(options={})
+  - const list = options.list || false;
+  - const text = options.text || "";
+  - const href = options.href || "";
+
+  .menu&attributes(attributes)
+    ul.menu__list
+      each item in list
+        li.menu__item
+          a.menu__link(href=item.href)!=item.text
