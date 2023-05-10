@@ -6,10 +6,14 @@ mixin intro(options={})
   .intro&attributes(attributes)
     .container
       .intro__heading
-        h1.intro__title Задачки на прокачку
-        p Задачи на интерфейсную логику, которые часто встречаются на реальных проектах
+        h1.intro__title
+          span Задачки
+          span на прокачку
+        .intro__paragraph
+          p Задачи на интерфейсную логику,
+          p которые часто встречаются
+          p на реальных проектах
       ul.intro__list
         each item in list
           li.intro__item
             a.intro__link(href=item.href)!=item.text
-

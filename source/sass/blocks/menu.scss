@@ -1,0 +1,21 @@
+.menu {
+  background-color: $color-tory-blue;
+  transition: $trans-600;
+  position: absolute;
+  width: 100%;
+  top: 78px;
+  left: 0;
+  height: 100vh;
+
+
+  &.menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.is-disable {
+  transform: translateY(-120%);
+  clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+}

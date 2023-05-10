@@ -1,5 +1,8 @@
 .header {
+  position: relative;
   padding: 28px 0;
+  margin-bottom: 100px;
+  transition: $trans-600;
 
   background-color: $color-transparent;
 
@@ -30,7 +33,7 @@
 
     &::after,
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 4px;
@@ -52,4 +55,29 @@
   &__button:hover::after {
     transform: translateX(10px);
   }
+}
+
+.is-active {
+  &::after {
+    transform: rotateZ(45deg);
+    background-color: $color-default-white;
+  }
+
+  &::before {
+    transform: rotateZ(-45deg);
+    top: 10px;
+    background-color: $color-default-white;
+  }
+
+  &:hover::after {
+    transform: rotateZ(42deg);
+  }
+
+  &:hover::before {
+    transform: rotateZ(-42deg);
+  }
+}
+
+.is-menu-open {
+  background-color: $color-tory-blue;
 }

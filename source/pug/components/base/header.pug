@@ -1,10 +1,10 @@
 mixin header(headerMods, currentUrl)
 
-  header.header(class=headerMods)
+  header.header(class=headerMods data-element="header")
     .container
       .header__container
         a.header__logo(href="sitemap.html", aria-label="Переход на главную") ligaa.intern
-        button.header__button(type="button" aria-label="Открыть")
+        button.header__button(type="button" aria-label="Открыть" data-element="open-menu")
       +menu({
         list: [
           {
@@ -23,4 +23,4 @@ mixin header(headerMods, currentUrl)
             text: 'Карта 4',
           },
         ]
-      })
+      }).is-disable

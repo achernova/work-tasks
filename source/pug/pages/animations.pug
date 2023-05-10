@@ -5,7 +5,7 @@ block variables
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
-  - const hasFooter = true
+  - const hasFooter = false
   - const footerMods = ""
   - const currentUrl = "animations.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
 
@@ -14,21 +14,27 @@ block main
     +intro({
       list: [
         {
+          href: '#',
           text: 'Меню',
         },
         {
+          href: '#',
           text: 'Лоадер',
         },
         {
+          href: '#',
           text: 'Сборка первого экрана',
         },
         {
+          href: '#',
           text: 'Появления блоков',
         },
         {
+          href: '#',
           text: 'Параллакс',
         },
         {
+          href: '#',
           text: 'Слайдер по скроллу',
         },
       ]
