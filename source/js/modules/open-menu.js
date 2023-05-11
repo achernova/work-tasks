@@ -9,10 +9,12 @@ const initOpenMenu = () => {
       mainMenu.classList.remove('is-disable');
       openMenuBtn.classList.add('is-active');
       header.classList.add('is-menu-open');
+      window.scrollLock.disableScrolling();
     } else {
       mainMenu.classList.add('is-disable');
       openMenuBtn.classList.remove('is-active');
       header.classList.remove('is-menu-open');
+      window.scrollLock.enableScrolling();
     }
   });
 };

@@ -562,9 +562,11 @@ button,
   position: relative;
   padding: 28px 0;
   margin-bottom: 100px;
-  -webkit-transition: 0.6s ease;
-  -o-transition: 0.6s ease;
-  transition: 0.6s ease;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   background-color: rgba(255, 255, 255, 0);
 }
 .header .container {
@@ -615,6 +617,8 @@ button,
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 .header__button::after {
   top: 10px;
@@ -656,6 +660,9 @@ button,
 
 .is-menu-open {
   background-color: #334482;
+}
+.is-menu-open .header__logo {
+  color: #ffffff;
 }
 
 .main-nav__list {
@@ -1807,19 +1814,35 @@ button,
 
 .menu {
   background-color: #334482;
-  -webkit-transition: 0.6s ease;
-  -o-transition: 0.6s ease;
-  transition: 0.6s ease;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
   position: absolute;
   width: 100%;
+  padding-top: 40px;
   top: 78px;
   left: 0;
   height: 100vh;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
 }
-.menu.menu__list {
+.menu__list {
   margin: 0;
-  padding: 0;
+  padding-left: 40px;
   list-style: none;
+}
+.menu__item {
+  margin-bottom: 30px;
+}
+.menu__item:last-child {
+  margin-bottom: 0;
+}
+.menu__link {
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
 }
 
 .is-disable {

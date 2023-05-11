@@ -1,17 +1,33 @@
 .menu {
   background-color: $color-tory-blue;
-  transition: $trans-600;
+  transition: 0.8s;
+  transform: translate3d(0, 0, 0);
   position: absolute;
   width: 100%;
+  padding-top: 40px;
   top: 78px;
   left: 0;
   height: 100vh;
+  clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
 
-
-  &.menu__list {
+  &__list {
     margin: 0;
-    padding: 0;
+    padding-left: 40px;
     list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    font-size: 40px;
+    line-height: 40px;
+    color: $color-default-white;
   }
 }
 

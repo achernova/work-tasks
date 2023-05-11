@@ -2,7 +2,8 @@
   position: relative;
   padding: 28px 0;
   margin-bottom: 100px;
-  transition: $trans-600;
+  transition: 0.3s;
+  transform: translate3d(0, 0, 0);
 
   background-color: $color-transparent;
 
@@ -41,6 +42,7 @@
       right: 0;
       top: 0;
       transition: $trans-default;
+      transform: translate3d(0, 0, 0);
     }
 
     &::after {
@@ -80,4 +82,8 @@
 
 .is-menu-open {
   background-color: $color-tory-blue;
+
+  .header__logo {
+    color: $color-default-white;
+  }
 }
