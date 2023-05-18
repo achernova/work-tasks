@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>ProjectName</title>
+    <title>Анимации</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -39,13 +39,28 @@
               </div>
             </div>
             <ul class="intro__list" data-attribute="intro-list">
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Меню</a></li>
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Лоадер</a></li>
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Сборка первого экрана</a></li>
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Появления блоков</a></li>
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Параллакс</a></li>
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Слайдер по скроллу</a></li>
             </ul>
           </div>
         </div>
+        <section class="description">
+          <div class="container">
+            <h2>Меню ТЗ</h2>
+            <h3>Анимация появления</h3>
+            <p>При открытии: Сначала появляется меню, затем внутренний контент. Пункты внутри появляются с разной задержкой - эффект "лесенки"</p>
+            <p>При закрытии: Внутренний контент исчезает до закрытия меню, без задержки</p>
+            <p>Анимация меню на данном сайте реализована с помощью css (это база). Можете так же реализовать анимацию с помощью gsap</p>
+            <h3>JS</h3>
+            <p>Для блокировки скролла используется window.scrollLock</p>
+            <p>Должны быть реализованы функции или методы для открытия и закрытия меню, которые можно использовать в других модулях</p>
+          </div>
+        </section>
       </main>
-      <footer class="footer">
-        <div class="container"></div>
-      </footer>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

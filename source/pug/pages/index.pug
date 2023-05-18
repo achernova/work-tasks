@@ -11,7 +11,51 @@ block variables
 
 block main
   main
-    //- на странице запрещен "голый" код
+    //- на странице запрещен "голый" кодextends ../components/base/layout
+
+block variables
+  - const title = "Анимации" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = false
+  - const footerMods = ""
+  - const currentUrl = "animations.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main
+    +intro({
+      list: [
+        {
+          href: '#',
+          text: 'Меню',
+        },
+        {
+          href: '#',
+          text: 'Лоадер',
+        },
+        {
+          href: '#',
+          text: 'Сборка первого экрана',
+        },
+        {
+          href: '#',
+          text: 'Появления блоков',
+        },
+        {
+          href: '#',
+          text: 'Параллакс',
+        },
+        {
+          href: '#',
+          text: 'Слайдер по скроллу',
+        },
+      ]
+    })
+    +description()
+
+block modals
+
     //- все блоки вставляются из папки pug/components/blocks
     +intro()
 
