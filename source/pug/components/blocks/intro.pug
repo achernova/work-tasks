@@ -7,13 +7,13 @@ mixin intro(options={})
     .container
       .intro__heading
         h1.intro__title
-          span Задачки
-          span на прокачку
+          span(data-element="title1") Задачки
+          span(data-element="title2") на прокачку
         .intro__paragraph
-          p Задачи на интерфейсную логику,
-          p которые часто встречаются
-          p на реальных проектах
-      ul.intro__list
+          p(data-element="pargraph1") Задачи на интерфейсную логику,
+          p(data-element="pargraph2") которые часто встречаются
+          p(data-element="pargraph3") на реальных проектах
+      ul.intro__list(data-attribute="intro-list")
         each item in list
-          li.intro__item
+          li.intro__item(data-attribute="intro-item")
             a.intro__link(href=item.href)!=item.text

@@ -31,23 +31,35 @@
         <div class="intro">
           <div class="container">
             <div class="intro__heading">
-              <h1 class="intro__title"><span>Задачки</span><span>на прокачку</span></h1>
+              <h1 class="intro__title"><span data-element="title1">Задачки</span><span data-element="title2">на прокачку</span></h1>
               <div class="intro__paragraph">
-                <p>Задачи на интерфейсную логику,</p>
-                <p>которые часто встречаются</p>
-                <p>на реальных проектах</p>
+                <p data-element="pargraph1">Задачи на интерфейсную логику,</p>
+                <p data-element="pargraph2">которые часто встречаются</p>
+                <p data-element="pargraph3">на реальных проектах</p>
               </div>
             </div>
-            <ul class="intro__list">
-              <li class="intro__item"><a class="intro__link" href="#">Меню</a></li>
-              <li class="intro__item"><a class="intro__link" href="#">Лоадер</a></li>
-              <li class="intro__item"><a class="intro__link" href="#">Сборка первого экрана</a></li>
-              <li class="intro__item"><a class="intro__link" href="#">Появления блоков</a></li>
-              <li class="intro__item"><a class="intro__link" href="#">Параллакс</a></li>
-              <li class="intro__item"><a class="intro__link" href="#">Слайдер по скроллу</a></li>
+            <ul class="intro__list" data-attribute="intro-list">
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Меню</a></li>
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Лоадер</a></li>
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Сборка первого экрана</a></li>
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Появления блоков</a></li>
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Параллакс</a></li>
+              <li class="intro__item" data-attribute="intro-item"><a class="intro__link" href="#">Слайдер по скроллу</a></li>
             </ul>
           </div>
         </div>
+        <section class="description">
+          <div class="container">
+            <h2>Меню ТЗ</h2>
+            <h3>Анимация появления</h3>
+            <p>При открытии: Сначала появляется меню, затем внутренний контент. Пункты внутри появляются с разной задержкой - эффект "лесенки"</p>
+            <p>При закрытии: Внутренний контент исчезает до закрытия меню, без задержки</p>
+            <p>Анимация меню на данном сайте реализована с помощью css (это база). Можете так же реализовать анимацию с помощью gsap</p>
+            <h3>JS</h3>
+            <p>Для блокировки скролла используется window.scrollLock</p>
+            <p>Должны быть реализованы функции или методы для открытия и закрытия меню, которые можно использовать в других модулях</p>
+          </div>
+        </section>
       </main>
     </div>
     <script src="js/vendor.min.js"></script>

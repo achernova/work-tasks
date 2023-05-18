@@ -1,6 +1,7 @@
 const openMenuBtn = document.querySelector('[data-element="open-menu"]');
 const mainMenu = document.querySelector('[data-attribute="main-menu"]');
 const header = document.querySelector('[data-element="header"]');
+const content = document.querySelector('main');
 
 const initOpenMenu = () => {
   openMenuBtn.addEventListener('click', (evt) => {
@@ -10,11 +11,13 @@ const initOpenMenu = () => {
       openMenuBtn.classList.add('is-active');
       header.classList.add('is-menu-open');
       window.scrollLock.disableScrolling();
+      content.style.zIndex = '-1';
     } else {
       mainMenu.classList.add('is-disable');
       openMenuBtn.classList.remove('is-active');
       header.classList.remove('is-menu-open');
       window.scrollLock.enableScrolling();
+      content.style.zIndex = '1';
     }
   });
 };
