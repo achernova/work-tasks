@@ -1872,6 +1872,8 @@ button,
   overflow: hidden;
   background: #334482;
   z-index: 1001;
+  visibility: hidden;
+  opacity: 0;
 }
 .preloader__block {
   position: relative;
@@ -1906,6 +1908,17 @@ button,
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+.preloader.is-active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.preloader.is-loaded .preloader__block {
+  -webkit-animation: none;
+          animation: none;
 }
 
 /* @mixin hover-focus {

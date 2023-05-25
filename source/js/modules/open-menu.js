@@ -17,7 +17,6 @@ const initOpenMenu = () => {
       openMenuBtn.classList.remove('is-active');
       header.classList.remove('is-menu-open');
       window.scrollLock.enableScrolling();
-      // content.style.zIndex = '1';
     }
   });
 };

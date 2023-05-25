@@ -5,6 +5,7 @@ import {CustomSelect} from './modules/select/custom-select';
 import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 import {initOpenMenu} from './modules/open-menu';
 import {introItemAnimation} from './modules/animation-intro';
+import {initLoader} from './modules/preloader';
 
 // ---------------------------------
 
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   initOpenMenu();
   introItemAnimation();
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -31,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initLoader();
   });
 });
 
