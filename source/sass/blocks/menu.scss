@@ -18,6 +18,12 @@
 
   &__item {
     margin-bottom: 30px;
+    transition: $trans-default;
+    transform: translate3d(0, 0, 0);
+
+    &:hover {
+      transform: translateX(20px);
+    }
   }
 
   &__item:last-child {
