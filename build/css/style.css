@@ -1881,6 +1881,7 @@ button,
 
 .map-one {
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 .map-one h1 {
   text-transform: uppercase;
@@ -1906,12 +1907,6 @@ button,
 .map-one__container {
   width: 100%;
   height: 100%;
-}
-.map-one__marker {
-  width: 100px;
-  height: 100px;
-  background-color: #8A94BD;
-  z-index: 100;
 }
 
 .preloader {
@@ -1970,6 +1965,12 @@ button,
 .preloader.is-loaded .preloader__block {
   -webkit-animation: none;
           animation: none;
+}
+
+.marker {
+  width: 40px;
+  height: 40px;
+  background-color: #334482;
 }
 
 /* @mixin hover-focus {

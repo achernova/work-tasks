@@ -1,5 +1,6 @@
 .map-one {
   padding-top: 100px;
+  padding-bottom: 100px;
 
   h1 {
     text-transform: uppercase;
@@ -23,12 +24,5 @@
   &__container {
     width: 100%;
     height: 100%;
-  }
-
-  &__marker {
-    width: 100px;
-    height: 100px;
-    background-color: $color-wild-blue-yonder;
-    z-index: 100;
   }
 }
