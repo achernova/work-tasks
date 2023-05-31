@@ -559,7 +559,7 @@ button,
 }
 
 .header {
-  position: relative;
+  position: fixed;
   padding: 28px 0;
   margin-bottom: 100px;
   -webkit-transition: 0.3s;
@@ -567,6 +567,8 @@ button,
   transition: 0.3s;
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+  width: 100%;
+  z-index: 100;
   background-color: rgba(255, 255, 255, 0);
 }
 .header .container {
@@ -605,6 +607,7 @@ button,
   cursor: pointer;
   position: relative;
   width: 50px;
+  right: 50px;
 }
 .header__button::after, .header__button::before {
   content: "";
@@ -1695,7 +1698,10 @@ button,
 }
 
 .intro {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #8A94BD;
+  padding-top: 150px;
+  padding-bottom: 50vh;
+  min-height: 100vh;
 }
 .intro__heading {
   display: -webkit-box;

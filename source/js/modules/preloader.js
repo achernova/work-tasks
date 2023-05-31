@@ -15,12 +15,10 @@ const initLoader = () => {
         document.body.classList.remove('scroll-lock');
         scrollLock.disableScrolling();
         loaderElement.classList.remove('is-active');
-        console.log(555);
       }, 1000);
       setTimeout(() => {
         scrollLock.enableScrolling();
         loaderElement.classList.add('is-loaded');
-        console.log(333);
       }, 2000);
     });
   });

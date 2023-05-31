@@ -8,7 +8,8 @@
     <meta name="description" content="ProjectName — описание">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="scroll-lock">
+  <body>
+    <!-- (class=noLoader ? null : "scroll-lock")-->
     <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><g fill="none"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol></svg></div>
     <div class="wrapper">
       <header class="header" data-element="header">
@@ -28,7 +29,7 @@
         </div>
       </header>
       <main>
-        <div class="intro">
+        <div class="intro" data-element="intro">
           <div class="container">
             <div class="intro__heading">
               <h1 class="intro__title"><span data-element="title1">Задачки</span><span data-element="title2">на прокачку</span></h1>
@@ -61,7 +62,7 @@
           </div>
         </section>
       </main>
-      <div class="preloader is-active" data-loader>
+      <div class="preloader" data-loader>
         <div class="preloader__block">
           <div class="preloader__dot"></div>
           <div class="preloader__dot"></div>

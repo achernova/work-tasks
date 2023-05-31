@@ -3,7 +3,7 @@ mixin intro(options={})
   - const text = options.text || "";
   - const href = options.href || "";
 
-  .intro&attributes(attributes)
+  .intro(data-element="intro")
     .container
       .intro__heading
         h1.intro__title

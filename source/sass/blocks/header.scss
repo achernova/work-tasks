@@ -1,9 +1,11 @@
 .header {
-  position: relative;
+  position: fixed;
   padding: 28px 0;
   margin-bottom: 100px;
   transition: 0.3s;
   transform: translate3d(0, 0, 0);
+  width: 100%;
+  z-index: 100;
 
   background-color: $color-transparent;
 
@@ -31,6 +33,7 @@
     cursor: pointer;
     position: relative;
     width: 50px;
+    right: 50px;
 
     &::after,
     &::before {

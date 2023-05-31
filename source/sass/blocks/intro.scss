@@ -1,5 +1,8 @@
 .intro {
-  background-color: $color-transparent;
+  background-color: $color-wild-blue-yonder;
+  padding-top: 150px;
+  padding-bottom: 50vh;
+  min-height: 100vh;
 
   &__heading {
     display: flex;

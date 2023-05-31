@@ -1,12 +1,4 @@
 import {gsap} from '../vendor/gsap.min';
-// import {ScrollTrigger} from '../vendor/scroll-trigger.min';
-
-/*  ScrollTrigger.create({
-  trigger: 'main', // отслеживаемый элемент
-  onUpdate: (self) => {
-    console.log(self);
-  },
-}); */
 
 const introItemAnimation = () => {
   gsap.fromTo('[data-attribute="intro-item"]', {duration: 1, scale: 0, x: -100, y: -100, delay: 0.5}, {duration: 1, scale: 1, x: 0, y: 0});
