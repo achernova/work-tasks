@@ -1,5 +1,6 @@
-const map = document.getElementById('map');
-console.log(map);
+const mapYandex = document.getElementById('map');
+let firstCoordinates = 10.260566;
+let secondCoordinates = 43.877557;
 
 const initMap = () => {
   main();
@@ -9,15 +10,15 @@ const initMap = () => {
     // загрузятся все компоненты API.
     await ymaps3.ready;
     // Создание карты.
-    const map = new ymaps3.YMap(map, {
+    const map = new ymaps3.YMap(mapYandex, {
       location: {
         // Координаты центра карты.
         // Порядок по умолчанию: «долгота, широта».
-        center: [43.866229, 10.259199],
+        center: [firstCoordinates, secondCoordinates],
 
         // Уровень масштабирования. Допустимые значения:
         // от 0 (весь мир) до 19.
-        zoom: 7
+        zoom: 11
       }
       },
       [
@@ -26,6 +27,22 @@ const initMap = () => {
       ]
     )
   }
+
+  const markerElement = document.createElement('div')
+  markerElement.className = 'map-one__marker';
+  // markerElement.innerText = "I'm marker!";
+
+  const marker = new YMapMarker(
+    {
+      source: 'markerSource',
+      coordinates: [firstCoordinates, secondCoordinates],
+      draggable: true,
+      mapFollowsOnDrag: true
+    },
+    markerElement
+  );
+
+  mapYandex.addChild(marker);
 };
 
 export {initMap};
