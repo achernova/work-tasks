@@ -1981,16 +1981,7 @@ button,
   width: 60%;
   gap: 20px;
   margin: 0 auto;
-}
-.description__scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 100%;
+  margin-bottom: 50px;
 }
 .description__block {
   background-color: rgba(51, 68, 130, 0.5);
@@ -2015,6 +2006,15 @@ button,
   -webkit-transform: translateY(30%);
       -ms-transform: translateY(30%);
           transform: translateY(30%);
+}
+.description__block-fade-scale {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform: translateY(30%);
+      -ms-transform: translateY(30%);
+          transform: translateY(30%);
+  opacity: 1;
 }
 
 /* @mixin hover-focus {

@@ -5,12 +5,7 @@
     width: 60%;
     gap: 20px;
     margin: 0 auto;
-  }
-
-  &__scroll {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    margin-bottom: 50px;
   }
 
   &__block {
@@ -30,5 +25,11 @@
 
   &__block-fade-in {
     transform: translateY(+30%);
+  }
+
+  &__block-fade-scale {
+    transform: scale(0);
+    transform: translateY(+30%);
+    opacity: 1;
   }
  }
