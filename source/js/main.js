@@ -6,8 +6,8 @@ import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 import {initOpenMenu} from './modules/open-menu';
 import {introItemAnimation} from './modules/animation-intro';
 import {initLoader} from './modules/preloader';
-// import {initAnimationScroll} from './modules/animation-scroll';
 import {initMap} from './modules/initMap';
+import {animateBlocks} from './modules/animation-blocks';
 
 // ---------------------------------
 
@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initOpenMenu();
   introItemAnimation();
   initMap();
+  animateBlocks();
 
   // ---------------------------------
 
@@ -37,7 +38,6 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
     initLoader();
-    // initAnimationScroll();
   });
 });
 
