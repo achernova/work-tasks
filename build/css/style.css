@@ -2024,6 +2024,19 @@ button,
   opacity: 1;
 }
 
+.scroll-slider {
+  width: 100%;
+  height: 100vh;
+}
+.scroll-slider h2 {
+  max-width: 300px;
+  margin: auto;
+}
+.scroll-slider p {
+  max-width: 200px;
+  margin: auto;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
