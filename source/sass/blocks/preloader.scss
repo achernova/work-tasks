@@ -7,9 +7,10 @@
   overflow: hidden;
   background: $color-tory-blue;
   z-index: 1001;
+  transform: translate3d(0, 0, 0);
 
-  visibility: hidden;
-  opacity: 0;
+  //visibility: hidden;
+  //opacity: 0;
 
   &__block {
     position: relative;
@@ -44,6 +45,9 @@
   }
 
   &.is-loaded {
+    transform: translateY(-100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+
     .preloader__block {
       animation: none;
     }

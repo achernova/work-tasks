@@ -15,11 +15,11 @@ const initLoader = () => {
         document.body.classList.remove('scroll-lock');
         scrollLock.disableScrolling();
         loaderElement.classList.remove('is-active');
-      }, 1000);
+      }, 500);
       setTimeout(() => {
         scrollLock.enableScrolling();
         loaderElement.classList.add('is-loaded');
-      }, 2000);
+      }, 1000);
     });
   });
 };

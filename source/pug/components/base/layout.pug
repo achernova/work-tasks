@@ -31,8 +31,7 @@ html(lang="ru")
 
     link(rel="stylesheet", href="css/style.min.css")
 
-  body
-    // (class=noLoader ? null : "scroll-lock")
+  body(class=noLoader ? null : "scroll-lock")
     +sprite()
     .wrapper(class=wrapperMods)
       if (hasHeader)

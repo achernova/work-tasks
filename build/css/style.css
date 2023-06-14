@@ -1918,8 +1918,8 @@ button,
   overflow: hidden;
   background: #334482;
   z-index: 1001;
-  visibility: hidden;
-  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 .preloader__block {
   position: relative;
@@ -1961,6 +1961,13 @@ button,
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
+}
+.preloader.is-loaded {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
 }
 .preloader.is-loaded .preloader__block {
   -webkit-animation: none;

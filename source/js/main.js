@@ -10,7 +10,7 @@ import {initMap} from './modules/initMap';
 import {animateBlocks} from './modules/animation-blocks';
 
 // ---------------------------------
-
+initLoader();
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
@@ -37,7 +37,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    initLoader();
   });
 });
 
