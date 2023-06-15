@@ -10,6 +10,40 @@
   height: calc(100vh + 50px);
   clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
 
+  &__block,
+  &__block-rew {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 30%;
+    top: 40vh;
+
+    transform-origin: top left;
+    transform: scale(0.2) rotate(0deg) translate(-50%, -50%);
+    animation: dot 12s ease-in forwards infinite;
+  }
+
+  @keyframes dot {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+
+    50% {
+      transform: scale(3) rotate(960deg) translate(-80%, -80%);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+
+  &__block-rew {
+    animation-delay: 1s;
+  }
+
   &__list {
     margin: 0;
     padding-left: 40px;

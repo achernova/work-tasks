@@ -1733,8 +1733,6 @@ button,
           transform: scale(0) rotate(0deg) translate(-50%, -50%);
   -webkit-animation: cube 12s ease-in forwards infinite;
           animation: cube 12s ease-in forwards infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1753,7 +1751,7 @@ button,
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   left: 25%;
-  top: 30vh;
+  top: 40vh;
 }
 .intro__block:nth-child(3) {
   left: 50%;
@@ -1762,7 +1760,7 @@ button,
 .intro__block:nth-child(4) {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
-  left: 65%;
+  left: 75%;
   top: 70vh;
 }
 .intro__block:nth-child(5) {
@@ -1951,6 +1949,59 @@ button,
   height: calc(100vh + 50px);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+}
+.menu__block, .menu__block-rew {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 30%;
+  top: 40vh;
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: scale(0.2) rotate(0deg) translate(-50%, -50%);
+      -ms-transform: scale(0.2) rotate(0deg) translate(-50%, -50%);
+          transform: scale(0.2) rotate(0deg) translate(-50%, -50%);
+  -webkit-animation: dot 12s ease-in forwards infinite;
+          animation: dot 12s ease-in forwards infinite;
+}
+@-webkit-keyframes dot {
+  from {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(3) rotate(960deg) translate(-80%, -80%);
+            transform: scale(3) rotate(960deg) translate(-80%, -80%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+@keyframes dot {
+  from {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(3) rotate(960deg) translate(-80%, -80%);
+            transform: scale(3) rotate(960deg) translate(-80%, -80%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+            transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+.menu__block-rew {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 .menu__list {
   margin: 0;

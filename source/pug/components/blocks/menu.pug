@@ -4,6 +4,10 @@ mixin menu(options={})
   - const href = options.href || "";
 
   nav.menu&attributes(attributes)(data-attribute="main-menu")
+    .menu__block
+      +icon("icon-round", 18, 18).menu__icon
+    .menu__block-rew
+      +icon("icon-round", 18, 18).menu__icon
     ul.menu__list
       each item in list
         li.menu__item
