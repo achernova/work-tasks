@@ -4,16 +4,25 @@ mixin intro(options={})
   - const href = options.href || "";
 
   .intro(data-element="intro")
+    .intro__bg
+      .intro__block
+      .intro__block
+      .intro__block
+      .intro__block
+      .intro__block
+      .intro__block
+      .intro__block
     .container
-      .intro__heading
-        h1.intro__title
-          span(data-element="title1") Задачки
-          span(data-element="title2") на прокачку
-        .intro__paragraph
-          p(data-element="pargraph1") Задачи на интерфейсную логику,
-          p(data-element="pargraph2") которые часто встречаются
-          p(data-element="pargraph3") на реальных проектах
-      ul.intro__list(data-attribute="intro-list")
-        each item in list
-          li.intro__item(data-attribute="intro-item")
-            a.intro__link(href=item.href)!=item.text
+      .intro__content
+        .intro__heading
+          h1.intro__title
+            span(data-element="title1") Задачки
+            span(data-element="title2") на прокачку
+          .intro__paragraph
+            p(data-element="pargraph1") Задачи на интерфейсную логику,
+            p(data-element="pargraph2") которые часто встречаются
+            p(data-element="pargraph3") на реальных проектах
+        ul.intro__list(data-attribute="intro-list")
+          each item in list
+            li.intro__item(data-attribute="intro-item")
+              a.intro__link(href=item.href)!=item.text

@@ -20,6 +20,7 @@
     margin-bottom: 30px;
     transition: $trans-default;
     transform: translate3d(0, 0, 0);
+    max-width: 300px;
 
     &:hover {
       transform: translateX(20px);
