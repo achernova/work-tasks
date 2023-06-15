@@ -11,7 +11,8 @@
   clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
 
   &__block,
-  &__block-rew {
+  &__block-rew,
+  &__block-third {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -20,7 +21,7 @@
 
     transform-origin: top left;
     transform: scale(0.2) rotate(0deg) translate(-50%, -50%);
-    animation: dot 12s ease-in forwards infinite;
+    animation: dot 20s ease-in forwards infinite;
   }
 
   @keyframes dot {
@@ -41,7 +42,11 @@
   }
 
   &__block-rew {
-    animation-delay: 1s;
+    animation-delay: 3s;
+  }
+
+  &__block-third{
+    animation-delay: 5s;
   }
 
   &__list {

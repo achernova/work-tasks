@@ -1950,7 +1950,7 @@ button,
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
 }
-.menu__block, .menu__block-rew {
+.menu__block, .menu__block-rew, .menu__block-third {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -1962,8 +1962,8 @@ button,
   -webkit-transform: scale(0.2) rotate(0deg) translate(-50%, -50%);
       -ms-transform: scale(0.2) rotate(0deg) translate(-50%, -50%);
           transform: scale(0.2) rotate(0deg) translate(-50%, -50%);
-  -webkit-animation: dot 12s ease-in forwards infinite;
-          animation: dot 12s ease-in forwards infinite;
+  -webkit-animation: dot 20s ease-in forwards infinite;
+          animation: dot 20s ease-in forwards infinite;
 }
 @-webkit-keyframes dot {
   from {
@@ -2000,8 +2000,12 @@ button,
   }
 }
 .menu__block-rew {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+.menu__block-third {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 .menu__list {
   margin: 0;
