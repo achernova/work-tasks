@@ -17,7 +17,8 @@
 
   &__block,
   &__block-rew {
-    border: 1px solid $color-default-white;
+    border: 3px solid $color-default-white;
+    border-radius: 20px;
     width: 100px;
     height: 100px;
     opacity: 0.5;

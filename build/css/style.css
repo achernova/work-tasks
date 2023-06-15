@@ -1719,7 +1719,8 @@ button,
           flex-direction: column;
 }
 .intro__block, .intro__block-rew {
-  border: 1px solid #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
   width: 100px;
   height: 100px;
   opacity: 0.5;
@@ -1908,7 +1909,7 @@ button,
           align-items: center;
   min-height: 80px;
   min-width: 100px;
-  background-color: rgba(51, 68, 130, 0.5);
+  background-color: rgba(51, 68, 130, 0.8);
   border-radius: 10px;
 }
 @media (max-width: 1023px) {
@@ -2099,7 +2100,7 @@ button,
   margin-bottom: 50px;
 }
 .description__block {
-  background-color: rgba(51, 68, 130, 0.5);
+  background-color: rgba(51, 68, 130, 0.8);
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
