@@ -2041,6 +2041,12 @@ button,
           transform: translateY(-120%);
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+  -webkit-animation: none;
+          animation: none;
+}
+.is-disable__block, .is-disable__block-rew, .is-disable__block-third {
+  -webkit-animation: none;
+          animation: none;
 }
 
 .map-one {

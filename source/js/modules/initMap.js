@@ -11,30 +11,13 @@ const initMap = () => {
     const map = new ymaps3.YMap(mapYandex, {
       location: {
         center: [firstCoordinates, secondCoordinates],
-        zoom: 11
+        zoom: 11,
       }
     },
       [
-        new ymaps3.YMapDefaultSchemeLayer()
+        new ymaps3.YMapDefaultSchemeLayer(),
       ]
     );
-
-    const markerElement = document.createElement('div');
-    markerElement.className = 'marker';
-
-    YMapMarker = window.YMapMarker
-
-    const marker = new YMapMarker(
-      {
-        source: 'markerSource',
-        coordinates: [10.260566, 43.877557],
-        draggable: true,
-        mapFollowsOnDrag: true
-      },
-      markerElement
-    );
-
-    map.addChild(marker);
   };
 };
 

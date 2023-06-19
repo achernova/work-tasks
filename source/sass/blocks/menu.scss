@@ -45,7 +45,7 @@
     animation-delay: 3s;
   }
 
-  &__block-third{
+  &__block-third {
     animation-delay: 5s;
   }
 
@@ -80,4 +80,11 @@
 .is-disable {
   transform: translateY(-120%);
   clip-path: polygon(0 0, 100% 0%, 100% 84%, 0% 100%);
+  animation: none;
+
+  &__block,
+  &__block-rew,
+  &__block-third {
+    animation: none;
+  }
 }
