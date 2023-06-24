@@ -6,7 +6,7 @@ import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 import {initOpenMenu} from './modules/open-menu';
 import {introItemAnimation} from './modules/animation-intro';
 import {initLoader} from './modules/preloader';
-import {initMap} from './modules/initMap';
+import {initYaMap} from './modules/initMap';
 import {animateBlocks} from './modules/animation-blocks';
 
 // ---------------------------------
@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   initOpenMenu();
   introItemAnimation();
-  initMap();
+  initYaMap();
   animateBlocks();
 
   // ---------------------------------
