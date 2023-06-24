@@ -7,6 +7,7 @@ import {initOpenMenu} from './modules/open-menu';
 import {introItemAnimation} from './modules/animation-intro';
 import {initLoader} from './modules/preloader';
 import {initYaMap} from './modules/initMap';
+import {initYaMapSecond} from './modules/initMap2';
 import {animateBlocks} from './modules/animation-blocks';
 
 // ---------------------------------
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initOpenMenu();
   introItemAnimation();
   initYaMap();
+  initYaMapSecond();
   animateBlocks();
 
   // ---------------------------------

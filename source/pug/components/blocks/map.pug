@@ -1,9 +1,10 @@
-mixin map-one()
-  section.map-one
+mixin map(options = {})
+  - const text = options.text || "";
+  section.map
     .container
       h1 Задание по карте №1
       h2 Техническое задание
       p Реализовать карту через API Яндекс карт. Настроить кастомный пин на карте так, что бы его стрелочка четко указывала на центр координат,которые вы можете придумать сами. На десктопной версии при скролле колесиком мышки, карта не должна масштабироваться.
-      .map-one__map
-        .map-one__container(id="map")
+      .map__map
+        .map__container(id=text)
 

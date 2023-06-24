@@ -27,10 +27,12 @@ const initYaMap = () => {
         });
 
         myMap.behaviors
-            .disable(['drag', 'rightMouseButtonMagnifier']);
+            .disable(['rightMouseButtonMagnifier', 'scrollZoom']);
 
         myMap.geoObjects
             .add(myPlacemark);
+
+        myMap.addCursor(YMaps.Cursor.GRAB);
       });
 };
 
