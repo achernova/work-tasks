@@ -37,9 +37,9 @@ const animateBlocks = () => {
     ease: 'back.out(1.7)',
   });
 
-  gsap.to('[data-element="fade-in1"]', {
+  gsap.to('[data-element="transform1"]', {
     scrollTrigger: {
-      trigger: '[data-element="fade-in1"]',
+      trigger: '[data-element="transform1"]',
       start: 'bottom bottom',
       end: 'top center',
       scrub: true,

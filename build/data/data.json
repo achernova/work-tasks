@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "coordinates": [43.862929, 10.239869],
+      "hint": "text",
+      "baloon": "qwerty"
+    }
+  ]
+}
+

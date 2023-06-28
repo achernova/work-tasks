@@ -2,14 +2,18 @@ mixin scroll-slider()
   section.scroll-slider
     .container
       .scroll-slider__block.scroll-slider__block--1
-        h2 Scroll Slider
-        p 1
-      .scroll-slider__block.scroll-slider__block--2
-        h2 Scroll Slider
-        p 2
-      .scroll-slider__block.scroll-slider__block--3
-        h2 Scroll Slider
-        p 3
-      .scroll-slider__block.scroll-slider__block--4
-        h2 Scroll Slider
-        p 4
+        .scroll-slider__content
+          h2 Scroll Slider
+          p 1
+      .scroll-slider__block.scroll-slider__block--2(data-element="scrollSlider")
+        .scroll-slider__content
+          h2 Scroll Slider
+          p 2
+      .scroll-slider__block.scroll-slider__block--3(data-element="scrollSlider")
+        .scroll-slider__content
+          h2 Scroll Slider
+          p 3
+      .scroll-slider__block.scroll-slider__block--4(data-element="scrollSlider")
+        .scroll-slider__content
+          h2 Scroll Slider
+          p 4

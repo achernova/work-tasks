@@ -2,6 +2,11 @@
   width: 100%;
   height: 100vh;
 
+  &__content {
+    max-width: 300px;
+    margin: auto;
+  }
+
   h2 {
     max-width: 300px;
     margin: auto;
@@ -10,5 +15,31 @@
   p {
     max-width: 200px;
     margin: auto;
+  }
+
+  &__block {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  &__block--1 {
+    background-color: aqua;
+  }
+
+  &__block--2 {
+    background-color: aquamarine;
+    opacity: 0;
+  }
+
+  &__block--3 {
+    background-color: blue;
+    opacity: 0;
+  }
+
+  &__block--4 {
+    background-color: brown;
+    opacity: 0;
   }
 }
