@@ -26,7 +26,7 @@ const initYaMapSecond = () => {
           iconImageSize: [50, 50],
         });
 
-        let myMarkOne = new ymaps.Placemark([43.862929, 10.239869], {
+        /* let myMarkOne = new ymaps.Placemark([43.862929, 10.239869], {
           hintContent: 'Метка',
           balloonContentHeader: '<p>Порт</p>',
           balloonContentBody: '<img src="img/content/port.jpg" width="100" height="100">',
@@ -64,17 +64,17 @@ const initYaMapSecond = () => {
           iconLayout: 'default#image',
           iconImageHref: '../img/svg/train.svg',
           iconImageSize: [50, 50],
-        });
+        }); */
 
         myMap.behaviors
             .disable(['rightMouseButtonMagnifier', 'scrollZoom']);
 
         myMap.geoObjects
-            .add(myPlacemark)
-            .add(myMarkOne)
-            .add(myMarkSec)
-            .add(myMarkThe)
-            .add(myMarkFour);
+            .add(myPlacemark);
+        // .add(myMarkOne)
+        // .add(myMarkSec)
+        // .add(myMarkThe)
+        // .add(myMarkFour);
 
         myMap.addCursor(YMaps.Cursor.GRAB);
       });
